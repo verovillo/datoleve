@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icons/Contacto/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
 </head>
+
 <body>
-    
+    <div class="contenedor">
+        <header class="encabezado">
+            <!-- Banner -->
+            <div class="banner">
+                <img src="" alt="" width="100%">
+                <h1>Contacto</h1>
+
+            </div>
+
+            <!-- Menú -->
+            <div class="menu">
+                <a href="autos.html">Autos |</a>
+                <a href="motos.html">Motos |</a>
+                <a href="index.html">Inicio |</a>
+            </div>
+
+        </header>
+
+        <main class="contenido">
+            <section class="enviar-mensaje">
+                <div>
+                    <!-- Contacto -->
+                    <form action="" method="get">
+                        <!--NOMBRE -->
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                        <!-- APELLIDO -->
+                        <label for="apellido">APELLIDO</label>
+                        <input type="text" name="apellido" id="apellido">
+                        <!-- E-MAIL -->
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email" required>
+                        <!-- TELEFONO -->
+                        <label for="telefono">N°DE TELEFONO</label>
+                        <input type="number" name="telefono" id="telefono" required>
+                        <!-- MENSAJE -->
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+
+                        <!-- ENVIAR -->
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </section>
+
+            <!-- UBICACION -->
+            <section class="ubicacion">
+                <div>
+                    <!-- AGREGAR ICONOS -->
+                    <h4>Calle 8888</h4>
+                    <!-- AGREGAR MAPA GOOGLE -->
+                </div>
+            </section>
+
+            <!-- REDES SOCIALES -->
+            <section class="redes-sociales">
+                <div>
+                    <!-- AGREGAR ICONOS -->
+                    <!-- Instagram -->
+                    <a href="http://www.instagram.com" target="_blank" rel="Instagram">Instagram</a>
+
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com" target="_blank" rel="Facebook">Facebook</a>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="pie">
+            <!-- AGREGAR IMAGEN  -->
+        </footer>
+
+    </div>
 </body>
+
 </html>
