@@ -7,53 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Icons/Contacto/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
 </head>
 
 <body>
-    <div class="contenedor">
-        <header class="encabezado">
+    <div class="grid-contenedor">
+        <header class="item1">
             <!-- Banner -->
-            <div class="banner">
-                <img src="" alt="" width="100%">
-                <h1>Contacto</h1>
-
+            
+            <div class="encabezado-banner">
+               
+                <img src="Images/Contacto/pruebabanner.png" alt="bannercontacto" width="100%" height="100%">  <!--No me queda la imagen como quiero si no le pongo widht y height  -->
+                <div class="encabezado-contacto">CONTACTO</div>
             </div>
-
-            <!-- Menú -->
-            <div class="menu">
+            
+        </header>
+        
+        <div class="item2">
+        <!-- Menú -->
+            <!-- <nav class="accesos">
+                <a href="index.html">Inicio |</a>
                 <a href="autos.html">Autos |</a>
                 <a href="motos.html">Motos |</a>
-                <a href="index.html">Inicio |</a>
-            </div>
+                
+            </nav> -->
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BA-Rental.github.io/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BA-Rental.github.io/autos.html">Autos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BA-Rental.github.io/motos.html">Motos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BA-Rental.github.io/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
 
-        </header>
-
-        <main class="contenido">
+        <main class="item3">
             <section class="enviar-mensaje">
-                <div>
+                
+                <div class="formulario">
                     <!-- Contacto -->
-                    <form action="" method="get">
-                        <!--NOMBRE -->
-                        <label for="nombre">NOMBRE</label>
-                        <input type="text" name="nombre" id="nombre" required>
-                        <!-- APELLIDO -->
-                        <label for="apellido">APELLIDO</label>
-                        <input type="text" name="apellido" id="apellido">
-                        <!-- E-MAIL -->
-                        <label for="email">E-MAIL</label>
-                        <input type="email" name="email" id="email" required>
-                        <!-- TELEFONO -->
-                        <label for="telefono">N°DE TELEFONO</label>
-                        <input type="number" name="telefono" id="telefono" required>
-                        <!-- MENSAJE -->
-                        <label for="mensaje"></label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                    <div class="contacto-titulo">CONTACTO</div>
+                    
+                    <div class="">
+                        <form action="" method="get">
+                            <div class="row">                                   
+                                <!--NOMBRE -->
+                                <div class="">
+                                    <label for="nombre">NOMBRE</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" name="nombre" id="nombre" required>
+                                </div>
+                                       
+                                <!-- APELLIDO -->
+                                <div class="">
+                                    <label for="apellido">APELLIDO</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" name="apellido" id="apellido">
+                                </div>
+                                    
+                                <!-- E-MAIL -->
+                                <div class="">
+                                    <label for="email">E-MAIL</label>
+                                </div>
+                                <div class="">
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                    
+                                <!-- TELEFONO -->
+                                <div class="">
+                                    <label for="telefono">N°DE TELEFONO</label>
+                                </div>
+                                <div class="">
+                                    <input type="tel" name="telefono" id="telefono" required>
+                                </div>                                
+                            </div>
 
-                        <!-- ENVIAR -->
-                        <input type="submit" value="Enviar">
-                    </form>
+                            <div>
+                                <!-- MENSAJE -->
+                                <label for="mensaje"></label>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                            </div>
+                            <!-- ENVIAR -->
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+
                 </div>
             </section>
 
@@ -80,7 +129,7 @@
         </main>
 
 
-        <footer class="pie">
+        <footer class="item4">
             <!-- AGREGAR IMAGEN  -->
         </footer>
 
