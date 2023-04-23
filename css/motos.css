@@ -1,32 +1,104 @@
+/* 
+#264653 Casi Azul
+#2A9D8F Verde apagado
+#E9C46A Amarillo Debil
+#F4A261 Naranja Apagado
+#E76F51 Casi Rojo
+*/
+
+
 *{
-    margin: 0px; /*Establece el margen para los cuatro lados*/
-     padding: 5px; /*Establece el espacio de relleno*/
-    background-color: #e9c46a
-}
-h1{
-    color: black; 
-}
+    margin: 2px; /*Establece el margen para los cuatro lados */
+    padding: 2px; /*Establece el espacio de relleno*/
+    font-family:  'Alkatra',sans-serif; 
+ }
 
-h2{
-    color: black;
+ body{
+
+    background-color:#2A9D8F;
 }
 
 
-#DivSon{
-    position: absolute;
-    top: 39px;
-    left: 49px;
-    width: 10%;
-    height: 10%;
-    background-image: url('/Images/Motos/Logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.contenedor{
+    width: 100%;
+    max-width: 100%; /*  Ancho maximo */
+    margin: 5px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7,auto);
+    grid-template-areas: "encabezado encabezado encabezado encabezado encabezado"
+                         "fotoPrincipal fotoPrincipal fotoPrincipal fotoPrincipal fotoPrincipal"
+                         "carousel carousel carousel textCarou textCarou"
+                         "electricas electricas electricas electricas electricas"
+                         "urbanas urbanas urbanas urbanas urbanas"
+                         "paraViajar paraViajar paraViajar paraViajar paraViajar"
+                         "pie pie pie pie pie";
+}
+
+.contenedor > div,
+.contenedor .encabezado,
+.contenedor .fotoPrincipal,
+.contenedor .carousel,
+.contenedor .textCarou,
+.contenedor .electricas,
+.contenedor .urbanas,
+.contenedor .paraviajar,
+.contenedor .paraCorrer,
+.contenedor .pie {
+    padding: 10;
+    border-radius: 4px;
+    background-color: #264653;
+    box-shadow: 10px 10px 10px black;
+  
+}
+
+.contenedor .encabezado {
+    grid-area: encabezado;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-image: linear-gradient(#264642, #264653)
+
+}
+
+.contenedor .fotoPrincipal {
+    width: 100%;
+    grid-area: fotoPrincipal;
+}
+
+.contenedor .carousel {
+    grid-area: carousel;
+    }
+
+.contenedor .textCarou {
+    grid-area: textCarou;
     
 }
 
-img.fit{
-    object-fit: cover;
+.contenedor .electricas {
     width: 100%;
-    height: 100%
+    grid-area: textCarou;
+    
+}
+
+
+.contenedor .urbanas {
+    width: 100%;
+    grid-area: textCarou;
+    
+}
+
+.contenedor .paraViajar {
+    width: 100%;
+    grid-area: textCarou;
+    
+}
+
+.contenedor .per {
+    width: 100%;
+    grid-area: textCarou;
+    
 }
