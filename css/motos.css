@@ -74,6 +74,7 @@
 .contenedor .encabezado{
     width: 100%;
     grid-area: encabezado;
+    position:fixed;    
 }
 
 .contenedor .fotoPrincipal {
