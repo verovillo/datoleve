@@ -1,87 +1,98 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    background-color: #e9c46a;
-    box-sizing: border-box;
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #e9c46a;
+  box-sizing: border-box;
 
 }
 
-.p1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
 }
 
-.box{
-    height: 200px;
-    background-image: linear-gradient(to left, #e9c46a, #264653) ;
+.box {
+  height: 200px;
+  background-image: linear-gradient(to left, #e9c46a, #264653);
 
 }
 
-.plogo{
-    margin-left: 5px;
-    padding-top: 10px;
+.plogo {
+  margin-left: 5px;
+  padding-top: 10px;
 }
+
 .navbar {
-    background-color: rgba(231, 111, 81, 0.5);
-    /* padding: 0.5rem 1rem; */
-    height: 55px;
-    border-radius: 2px;
-    border: 1px solid black ;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+  background-color: rgba(231, 111, 81, 0.5);
+  /* padding: 0.5rem 1rem; */
+  height: 55px;
+  border-radius: 2px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 
-  }
+}
 
-  .nav-item {
-    border-radius: 5px;
-    margin: 0 0.5rem;
-    height: auto;
-    
-  }
-  
-  .nav-link {
-    color: #333;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: background-color 0.1s ease-in-out;
-  }
-  
-  .nav-link.active,
-  .nav-link:hover {
-    background-color: #264653;
-    color: #fff;
-    border-radius: 10px;
-  }
-  
- .box2{
+.nav-item {
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  height: auto;
 
-  height: 600px;
-  width: 600px;
+}
+
+.nav-link {
+  color: #333;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: #264653;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.boxcentral {
+  padding: 0;
+  margin: 0px 30px;
+  background-color: rgba(248, 236, 234, 50%);
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.box2 {
+
+  height: 1000px;
+  width: 1200px;
   opacity: 1;
   padding: 10px;
-  
- }
 
- .registro{
+}
+
+.registro {
 
   width: 400px;
-  background-color: #2a9d8f;
+  background-color: #264653;
   padding: 30px;
-  margin: auto;
+  margin: 30px;
   border-radius: 5px;
+  box-shadow: 5px 5px 15px 1px black;
+}
 
- }
-
- .registro h4{
+.registro h4 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 30px;
-color:whitesmoke;
-text-shadow: 2px 2px 4px black;
+  font-size: 30px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
 
- }
 
- .control{
+}
+
+.control {
 
   width: 100%;
   background-color: #e76f51;
@@ -91,7 +102,35 @@ text-shadow: 2px 2px 4px black;
   border: 1px solid #264653;
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
+}
 
-  
-  
+.box3 {
+  margin: 10px 0px;
+
+  background-image:linear-gradient(to top,#2a9d8f, rgb(22, 20, 20)) ;
+  grid-column: 1 / span 2;
+  display: inline-flex;
+
+}
+
+.box3 p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  padding: 10px 300px;
+  color: #fff;
+}
+
+.plogo2{
+  padding-left: 0%;
+  margin: 25px 0px;
+}
+
+.pLogosRedes{
+
+  margin-top: 150px;
+  /* background-color: white; */
+  margin-left: 20px;
+
+}
