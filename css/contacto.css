@@ -1,26 +1,38 @@
 .grid-contenedor {
     display: grid;
     width: 100%;
-    border: red solid;
+    border: solid red;
+    /* background: red ; */
+    /* padding: 10px; */
     position: relative;
+    font-family: 'Nunito', sans-serif;
     /* height: 100px; */
     /* gap: 20px; */
-    grid-template-columns: auto auto;
-    grid-template-areas: "header header"
-        "menu menu"
-        "main main "
-        "footer footer "
-
+    grid-template-columns: auto;
+    grid-template-areas:    "header"
+                            "menu"
+                            "main"
+                            "footer"
 }
 
 
 * {
-    margin: 0px;
+    margin: 0px; 
     padding: 0px;
     box-sizing: border-box;
 }
 
 
+.item2{
+    /* box-shadow: 10px 10px 10px black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    /* background-image: linear-gradient(#c382ad, #7a1717); */
+    padding: 2px;    
+}
 
 .encabezado-banner {
     height: 200px;
@@ -43,47 +55,11 @@
     text-align: center;
 }
 
-.navbar {
-    background-color: #e76f51;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: square;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    border-radius: 20px;
-    margin: 0 0.5rem;
-}
-
-.nav-link {
-    color: #333;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: background-color 0.1s ease-in-out;
-}
-
-.nav-link.active,
-.nav-link:hover {
-    background-color: #264653;
-    color: #fff;
-    border-radius: 10px;
-}
 
 
 .enviar-mensaje {
     width: 100%;
     position: relative;
-
-
 }
 
 .contacto-titulo {
@@ -98,25 +74,147 @@
 }
 
 .formulario {
-    padding: 98px 60px 90px;
+    /* display:inline-flex; */
+    padding: 90px 60px 90px 60px;
     margin-bottom: 50px;
+    border: #264653 solid;
 }
+
+
+.contenedor-formulario {
+    /* border: 3px solid #288cba; */
+    position: relative;
+}
+
+.row {
+    /* border: 2px rgb(0, 215, 29) solid; */
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name,
+.last-name,
+.mail,
+.phone {
+    width: 50%;
+}
+
+.last-name,
+.phone {
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.label-apellido,
+.label-telefono,
+.label-nombre,
+.label-email {
+    /* border: 2px coral solid; */
+    box-sizing: content-box;
+    width: 99%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.type-apellido,
+.type-telefono,
+.type-nombre,
+.type-email {
+    /* border: 2px rgb(80, 89, 255) solid; */
+    padding: 10px;
+    width: 100%;
+    /* margin: 0%;
+    padding: 10px; */
+}
+
+#nombre,
+#apellido,
+#email,
+#telefono {
+    width: 100%;
+    padding: 5px;
+    font-size: medium;
+}
+
+.label-mensaje {
+    padding: 10px
+}
+
+textarea {
+    /* border: 2px rgb(219, 22, 179) solid; */
+    width: 100%;
+    font-size: x-large;
+}
+
+.boton-enviar {
+    /* border: 2px rgb(219, 22, 179) solid; */
+    padding: 20px;
+    text-align: center; 
+}
+
+.btn {
+    padding: 10px;
+    font-size: larger;
+}
+
+.redes-sociales{
+    border: solid green;
+    /* background-color: black; */
+
+}
+
+.icon-ubi,
+.icon-tel{
+    width: 20px;
+    height: 20px;
+    /* border: #264653 solid; */
+}
+
+.ubicacion{
+    border: solid blueviolet;
+    padding: 30px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.direccion{
+    /* border: solid; */
+    margin: 5px;
+    padding: 10px;
+    display: flex;    
+}
+
+.telefono{
+    position: absolute;
+    transform: translate(60%, 125%);
+    /* border: solid; */
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+}
+
+h5{
+   
+    padding-left: 10px;
+}
+
 
 
 .item1 {
-    grid-area: header;
-
+    grid-area: menu;
 }
 
 .item2 {
-    grid-area: menu;
-    
+    grid-area: header;
+
 }
 
 .item3 {
     grid-area: main;
 }
-
 
 .item4 {
     grid-area: footer;
