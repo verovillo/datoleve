@@ -1,0 +1,159 @@
+/*  Color verde oscuro  HEX #264653
+    Color verde claro   HEX #2A9D8F
+    Color Amarillo      HEX #E9C46A 
+    Color Naranja       HEX #F4A261
+    Color Naranja osc   HEX #E76F51
+*/
+
+
+/* ETIQUETAS */
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to left, #e9c46a, #264653);
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px 30px;
+    display: flex;
+}
+
+nav li {
+    margin: 0px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header img {
+    max-height: 32px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2%;
+
+}
+
+
+.contenedor-alfa {
+    background-color: rgba(248, 236, 234, 50%);;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contenedor-beta {
+    background-color: rgba(248, 236, 234, 50%);;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.grilla-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.grilla-2x1a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 10px;
+}
+
+.grilla-2x1b {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item {
+    background-color: beige;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.item2 {
+    background-color: rgba(248, 236, 234, 50%);;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.mapa {
+    position: relative;
+    padding-bottom: 20%;
+    /* Esta proporción mantiene la relación de aspecto del mapa */
+    height: 0;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.arriba {
+    color: #e9c46a;
+    margin: 0px 20px 0px 98%;
+    padding: 0%;
+    text-align: center;
+
+
+}
+
+
+
+/* /////////////// */
