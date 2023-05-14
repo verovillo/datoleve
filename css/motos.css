@@ -9,150 +9,191 @@
 
 *{
     margin: 2px; /*Establece el margen para los cuatro lados */
-    padding: 2px; /*Establece el espacio de relleno*/
-    font-family:  'Alkatra',sans-serif; 
+    padding: 10px; /*Establece el espacio de relleno*/
+    font-family:  'Nunito',sans-serif; 
     
  }
 
  body{
 
-    background-color:white;
+    background-color:#f9f4ea;
+    background-image: url(../Images/Motos/arena2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+h2 {
+
+    font-size: 30px;
+     }
+
+
+
+h3 {
+
+font-size: 20px;
+color: #264653;
+
 }
 
 
 .contenedor{
-    width: 100%;
+    width: 100vw;
     max-width: 100%; /*  Ancho maximo */
     margin: 5px auto;
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(10,auto);
-    grid-template-areas: "encabezado encabezado encabezado encabezado"
-                         "fotoPrincipal fotoPrincipal fotoPrincipal fotoPrincipal"
-                         "carousel textCarou textCarou textCarou"
-                         "tElectricas tElectricas tElectricas tElectricas"
-                         "electricas electricas electricas electricas"
-                         "tUrbanas tUrbanas tUrbanas tUrbanas"
-                         "urbanas urbanas urbanas urbanas"
-                         "tParaViajar tParaViajar tParaViajar tParaViajar"
-                         "paraViajar paraViajar paraViajar paraViajar"
-                         "pie pie pie pie";
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "fotoPrincipal fotoPrincipal fotoPrincipal" 
+                         "historia textHistoria textHistoria"
+                         "tElectricas tElectricas tElectricas"
+                         "electricas electricas electricas"
+                         "tUrbanas tUrbanas tUrbanas"
+                         "urbanas urbanas urbanas "
+                         "tParaViajar tParaViajar tParaViajar"
+                         "paraViajar paraViajar paraViajar"
+                         "pie pie pie"
 }
 
-.contenedor > div,
+
 .contenedor .fotoPrincipal,
-.contenedor .carousel,
-.contenedor .textCarou,
+.contenedor .historia,
+.contenedor .textHistoria,
 .contenedor .electricas,
 .contenedor .urbanas,
 .contenedor .paraViajar,
 .contenedor .pie {
     padding: 10;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 10px 10px 10px black;
-  
+    border-radius: 5px;
+    background-color:;
+     
 }
 
 
-.contenedor > div,
-.contenedor .tElectricas,
-.contenedor .tUrbanas,
-.contenedor .tParaViajar,
 .contenedor .encabezado {
-    box-shadow: 10px 10px 10px black;
+    position: fixed;
+    top: 0;
+    left: 0;     
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    border-radius: 10px;
-    background-image: linear-gradient(#264642, #264653)     
-     
-}
-
-.contenedor .encabezado{
     width: 100%;
     grid-area: encabezado;
-    position:fixed;    
+    background-image: linear-gradient(to left, #e9c46a, #264653)
+    
+
 }
 
 .contenedor .fotoPrincipal {
     width: 100%;
     grid-area: fotoPrincipal;
-    background-color:#264653;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: beige;
+    
 }
 
-.contenedor .carousel {
-    grid-area: carousel;
+.contenedor .historia {
+    width: 100%;
+    grid-area: historia;
+    background-color: beige;
+    box-shadow: 10px 10px 10px black
     }
 
-.contenedor .textCarou {
-    grid-area: textCarou;
-    background-color: #264653;
-    
+.contenedor .textHistoria {
+    width: 100%;
+    font-size: 18px;
+    grid-area: textHistoria;
+    text-align: center;
+    background-color: beige;
+    font-weight: bold;
+                
 }
 
 .contenedor .tElectricas{
     width: 100%;
     grid-area: tElectricas;
-    font-size: 15px;
+    border: solid 1px;
+    box-shadow: 10px 10px 10px black
 }
 
-.contenedor .electricas {
+.contenedor .tUrbanas {
+    width: 100%;
+    grid-area: tUrbanas;
+    border: solid 1px;
+    box-shadow: 10px 10px 10px black
+}
+
+.contenedor .tParaViajar {
+    width: 100%;
+    grid-area: tParaViajar;
+    border: solid 1px;
+    box-shadow: 10px 10px 10px black
+    }
+
+.contenedor .electricas  {
     width: 100%;
     grid-area: electricas;
     display: flex;
+    grid-column-gap: 25px;
+    grid-template-columns: auto;
     
-}
-
-.contenedor .tUrbanas{
-    width: 100%;
-    grid-area: tUrbanas;
-    font-size: 15px;
 }
 
 .contenedor .urbanas {
     width: 100%;
     grid-area: urbanas;
     display: flex;
-}
-
-.contenedor .tParaViajar{
-    width: 100%;
-    grid-area: tParaViajar;
-    font-size: 15px;
+    grid-column-gap: 25px;
+    grid-template-columns: auto;
+    
 }
 
 .contenedor .paraViajar {
     width: 100%;
     grid-area: paraViajar;
     display: flex;
+    grid-column-gap: 25px;
+    grid-template-columns: auto;
     
 }
 
 .contenedor .pie {
     width: 100%;
-    height: 200px;
+    height: 30px;
     grid-area: pie;
     background-color: black;
     color: white;
-    he
+            
+}
+
+.box{
+
+    width: 100%; 
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: beige;
+    text-align: center;
+    border-radius: 5%;
+
+    
         
 }
 
-.relative1{
-
-    
-    position: relative;
-    left:0%;
-    top:0%;  
+.box img{
+    max-width: 100%;
+    height: auto;
 }
 
-.fixed1{
-    
-    position: fixed;
-    left:0%;
-    top:0%;  
+.box p {
+
+    max-width: 100%;
+    height: auto
 
 }
+
+  
