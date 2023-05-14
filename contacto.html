@@ -11,17 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    
+    
+
 </head>
 
 <body>
     <div class="grid-contenedor">
         <section class="item2">
-            <!-- Menú -->
-            <img src="" alt="">
-            <nav>
-                <a href="/index.html" style="color:black">INICIO |</a>
-                <a href="/autos.html" style="color:black">AUTOS |</a>
-                <a href="/contacto.html" style="color:black">MOTOS |</a>
+            <img class="logo" src="Images/Contacto/Logo Rental.png" alt="logo">
+            <nav class="navbar">
+                <div class="nav-item">
+                    <a class="nav-link" href="/index.html">INICIO</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="/autos.html">AUTOS</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="/contacto.html">MOTOS</a>
+                </div>
+
             </nav>
         </section>
 
@@ -47,7 +56,7 @@
                     <div class="contacto-titulo">CONTACTO</div>
 
                     <div class="contenedor-formulario">
-                        <form action="" method="get">
+                        <form id="form" class="form" action="https://formspree.io/f/myyaoqng" method="POST">
                             <div class="row">
                                 <div class="name">
                                     <!--NOMBRE -->
@@ -98,7 +107,7 @@
 
                             <div class="boton-enviar">
                                 <!-- ENVIAR -->
-                                <input type="submit" value="Enviar" class="btn">
+                                <button type="submit">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -106,50 +115,58 @@
                 </div>
             </section>
 
-            <!-- UBICACION -->
-            <section class="ubicacion">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.79571461868!2d-58.40901601046854!3d-34.609326907905874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf20effada1%3A0xed76bc679c136c1b!2sPlaza%20Miserere!5e0!3m2!1ses-419!2sar!4v1682819628258!5m2!1ses-419!2sar"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <div class="direccion">
-                    <img class="icon-ubi" src="Icons/Contacto/location-dot-solid black.svg" alt="icono-ubicacion">
-                    <h5>Bartolomé Mitre 2819, C1203 CABA</h5>
-                    
-                </div>
-
-                <div class="telefono">
-                    <img class="icon-tel" src="Icons/Contacto/phone-solidblack.svg" alt="icono-telefono">
-                    <h5>(011)-1512345678</h5>
-                </div>
-            </section>
-
         </main>
 
 
         <footer class="item4">
-            <!-- AGREGAR IMAGEN  -->
-            <section class="redes-sociales">
-                <div class="footer">
-                    <img src="Images/Contacto/black1.jpg" alt="imagen-footer" width="100%" height="100%">
+            <div class="contendor-footer">
+                <div class="informacion-contacto">
+
+
+                    <div class="mapa">
+                        <div class="contenedor-mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.79571461868!2d-58.40901601046854!3d-34.609326907905874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf20effada1%3A0xed76bc679c136c1b!2sPlaza%20Miserere!5e0!3m2!1ses-419!2sar!4v1682819628258!5m2!1ses-419!2sar"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <!-- <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.79571461868!2d-58.40901601046854!3d-34.609326907905874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf20effada1%3A0xed76bc679c136c1b!2sPlaza%20Miserere!5e0!3m2!1ses-419!2sar!4v1682819628258!5m2!1ses-419!2sar"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                        <div class="columna">
+                            <img class="icon-ubi" src="Icons/Contacto/location-dot-solid black.svg"
+                                alt="icono-ubicacion">
+                            <h5>Bartolomé Mitre 2819, C1203 CABA</h5>
+                        </div>
+                        <div class="columna">
+                            <img class="icon-tel" src="Icons/Contacto/phone-solidblack.svg" alt="icono-telefono">
+                            <h5>(011) 15-12345678</h5>
+                        </div>
+                    </div>
+                    <div class="redes-sociales">
+                        <h5>Visítanos en nuestras redes sociales: </h5>
+                        <div class="facebook">
+                            <a class="icon-face" href="https://www.facebook.com"><img
+                                    src="Icons/Contacto/facebookblack.svg" alt="Icono de Facebook" width="100"
+                                    height="50px"></a>
+                        </div>
+                        <!-- <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Icono de Twitter"></a></li> -->
+                        <div class="instagram">
+                            <a class="icon-insta" href="https://www.instagram.com"><img
+                                    src="Icons/Contacto/instagramblack.svg" alt="Icono de Instagram" width="100"
+                                    height="50px"></a>
+                        </div>
+                    </div>
+                    <img src="Images/Contacto/black1.jpg" alt="imagen-footer" width="100%" height="100%"
+                        class="fondo-footer">
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <!-- AGREGAR ICONOS -->
-                    <!-- Instagram -->
-                    <a href="http://www.instagram.com" target="_blank" rel="Instagram">Instagram</a>
+            </div>
 
-                    <!-- Facebook -->
-                    
-                    
-                    <a href="http://www.facebook.com" target="_blank" rel="Facebook">Facebook</a>
-                </div>
-            </section>
-        </footer>
-
+        
     </div>
+    <script src="JS/contacto.js"></script>
 </body>
 
 </html>
