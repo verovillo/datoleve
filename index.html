@@ -8,46 +8,55 @@
     <title>BA-Rental</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../BA-Rental.github.io/css/index.css">
     <link rel="icon" href="../BA-Rental.github.io/Icons/Index/Logo.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="box">
+    <header class="box">
+        <div>
             <div class="plogo"> <img src="../BA-Rental.github.io/Images/Index/Logo Rental.png" alt="LogoEmpresa"
-                    width="300px">
+                    width="59px">
 
             </div>
-
-            <!-- <p class="p1">Contactanos
-            <ul align="center">
-                <li>+57-888-888</li>
-                <li>barental@rental.com.ar</li>
+        </div>
+        <nav>
+            <ul>
+              <li class="nav-link"><a href="index.html">Inicio</a></li>
+              <li class="nav-link"><a href="motos.html">Motos</a></li>
+              <li class="nav-link"><a href="autos.html">Autos</a></li>
+              <li class="nav-link"><a href="contacto.html">Contacto</a></li>
             </ul>
-            </p> -->
-        </div>
+          </nav>
+
+        <!-- <nav>
+
+            <div class="nav-item">
+                <a class="nav-link" href="../BA-Rental.github.io/index.html">Home</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="../BA-Rental.github.io/autos.html">Autos</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="../BA-Rental.github.io/motos.html">Motos</a>
+            </div>
+
+            <div class="nav-item">
+                <a class="nav-link" href="../BA-Rental.github.io/contacto.html">Contacto</a>
+            </div>
+
+        </nav> -->
+
     </header>
-
-    <nav class="navbar">
-
-        <div class="nav-item">
-            <a class="nav-link" href="../BA-Rental.github.io/index.html">Home</a>
-        </div>
-
-        <div class="nav-item">
-            <a class="nav-link" href="../BA-Rental.github.io/autos.html">Autos</a>
-        </div>
-
-        <div class="nav-item">
-            <a class="nav-link" href="../BA-Rental.github.io/motos.html">Motos</a>
-        </div>
-
-        <div class="nav-item">
-            <a class="nav-link" href="../BA-Rental.github.io/contacto.html">Contacto</a>
-        </div>
-
-    </nav>
 
     <div class="boxcentral">
         <div class="box2">
@@ -71,8 +80,20 @@
                     </div>
                 </div>
             </div>
+            <section>
+                <fieldset class="box4">
+                    <h4>RESERVA</h4>
+                    <input class="lugar" type="text" name="lugar" id="lugar" placeholder="Lugar de Partida">
+                    <input class="fechas1" type="date" name="inicio" id="inicio">
+                    <input class="fechas2" type="date" name="final" id="final">
+                    <select class="cBox" name="vehiculos">
+                        <option value="moto">Moto</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                    <input class="btContinuar" type="button" value="Continuar..">
+                </fieldset>
+            </section>
         </div>
-
         <selection>
             <fieldset class="registro">
                 <h4 align="center">Registrarse</h4>
@@ -91,7 +112,7 @@
                 <img src="../BA-Rental.github.io/Icons/Index/Logo.ico" alt="LogoEmpresa" width="150px">
             </div>
 
-<p>La empresa de alquiler de autos y motos, con más de 20 años de trayectoria en el mercado argentino, es
+            <p>La empresa de alquiler de autos y motos, con más de 20 años de trayectoria en el mercado argentino, es
                 reconocida como líder en el sector. La compañía se destaca por brindar un servicio de alta calidad y
                 personalizado a sus clientes, que van desde turistas nacionales e internacionales, hasta ejecutivos y
                 residentes locales. <br> <br>
@@ -100,18 +121,24 @@
                 actualización para asegurar la mejor experiencia de manejo y seguridad.</p>
 
             <div class="pLogosRedes">
-                <img src="../BA-Rental.github.io/Images/Index/facebook.png" alt="facebook" width="30px">
+                <a href="https://www.facebook.com/" target="_blank" rel="Facebook">
+                    <img src="../BA-Rental.github.io/Images/Index/facebook.png" alt="facebook" width="30px">
+                </a>
             </div>
 
             <div class="pLogosRedes">
-                <img src="../BA-Rental.github.io/Images/Index/instagram.png" alt="instagram" width="30px">
+                <a href="https://www.instagram.com/" target="_blank"> <img
+                        src="../BA-Rental.github.io/Images/Index/instagram.png" alt="instagram" width="30px">
+                </a>
             </div>
 
             <div class="pLogosRedes" style="margin-right: 50px;">
-                <img src="../BA-Rental.github.io/Images/Index/sobre.png" alt="correo" width="30px">
+                <a href="http://gmail.com" target="_blank" rel="Mail">
+                    <img src="../BA-Rental.github.io/Images/Index/sobre.png" alt="correo" width="30px">
+                </a>
             </div>
 
-            
+
 
         </div>
 
