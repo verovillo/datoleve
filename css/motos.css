@@ -8,18 +8,16 @@
 
 
 *{
-    margin: 2px; /*Establece el margen para los cuatro lados */
-    padding: 10px; /*Establece el espacio de relleno*/
+    margin: 0px; /*Establece el margen para los cuatro lados */
+    padding: 0px; /*Establece el espacio de relleno*/
     font-family:  'Nunito',sans-serif; 
     
  }
 
  body{
 
-    background-color:#f9f4ea;
-    background-image: url(../Images/Motos/arena2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:beige;
+    
     }
 
 h2 {
@@ -84,22 +82,21 @@ color: #264653;
     width: 100%;
     grid-area: encabezado;
     background-image: linear-gradient(to left, #e9c46a, #264653);
-    border-radius: 10%
-}
+    }
 
 .contenedor .fotoPrincipal {
     width: 100%;
     grid-area: fotoPrincipal;
     font-weight: bold;
     font-size: 20px;
-    background-color: beige;
+    background-color: #E9C46A;
     
 }
 
 .contenedor .historia {
     width: 100%;
     grid-area: historia;
-    background-color: beige;
+    background-color:#F4A261;
     box-shadow: 10px 10px 10px black
     }
 
@@ -108,36 +105,34 @@ color: #264653;
     font-size: 18px;
     grid-area: textHistoria;
     text-align: center;
-    background-color: beige;
+    background-color:#F4A261;
     font-weight: bold;
+    box-shadow: 10px 10px 10px black
                 
 }
 
 .contenedor .tElectricas{
     width: 100%;
     grid-area: tElectricas;
-    border: solid 0.5px;
-    border-color: beige;
-    box-shadow: 10px 10px 10px beige;
-    backdrop-filter: blur(1px);
+    border-top: solid 0.5px;
+    border-color: gray;
+    backdrop-filter: blur(2px);
     
 }
 
 .contenedor .tUrbanas {
     width: 100%;
     grid-area: tUrbanas;
-    border: solid 1px;
-    border-color: beige;
-    box-shadow: 10px 10px 10px beige;
+    border-top: solid 0.5px;
+    border-color: gray;
     backdrop-filter: blur(1.5px)
 }
 
 .contenedor .tParaViajar {
     width: 100%;
     grid-area: tParaViajar;
-    border: solid 1px;
-    border-color: beige;
-    box-shadow: 10px 10px 10px beige;
+    border-top: solid 0.5px;
+    border-color: gray;
     backdrop-filter: blur(1.5px)
     }
 
@@ -182,12 +177,9 @@ color: #264653;
     width: 100%; 
     grid-column: span 1;
     grid-row: span 1;
-    background-color: beige;
+    background-color:#E9C46A;
     text-align: center;
-    border-radius: 5%;
-
-    
-        
+    border-radius: 5%      
 }
 
 .box img{
@@ -195,11 +187,31 @@ color: #264653;
     height: auto;
 }
 
-.box p {
+.box2{
 
-    max-width: 100%;
-    height: auto
-
+    width: 100%; 
+    grid-column: span 1;
+    grid-row: span 1;
+    text-align: center;
+    border-radius: 5%      
 }
 
-  
+.box2 img{
+    max-width: 100%;
+    height: auto;
+} 
+
+
+.nav-link {
+    display: flex ;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+.hlighted:hover {
+    background-color: #264653;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+  }
