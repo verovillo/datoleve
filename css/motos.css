@@ -83,9 +83,8 @@ color: #264653;
     font-size: 20px;
     width: 100%;
     grid-area: encabezado;
-    background-image: linear-gradient(to left, #e9c46a, #264653)
-    
-
+    background-image: linear-gradient(to left, #e9c46a, #264653);
+    border-radius: 10%
 }
 
 .contenedor .fotoPrincipal {
@@ -117,22 +116,29 @@ color: #264653;
 .contenedor .tElectricas{
     width: 100%;
     grid-area: tElectricas;
-    border: solid 1px;
-    box-shadow: 10px 10px 10px black
+    border: solid 0.5px;
+    border-color: beige;
+    box-shadow: 10px 10px 10px beige;
+    backdrop-filter: blur(1px);
+    
 }
 
 .contenedor .tUrbanas {
     width: 100%;
     grid-area: tUrbanas;
     border: solid 1px;
-    box-shadow: 10px 10px 10px black
+    border-color: beige;
+    box-shadow: 10px 10px 10px beige;
+    backdrop-filter: blur(1.5px)
 }
 
 .contenedor .tParaViajar {
     width: 100%;
     grid-area: tParaViajar;
     border: solid 1px;
-    box-shadow: 10px 10px 10px black
+    border-color: beige;
+    box-shadow: 10px 10px 10px beige;
+    backdrop-filter: blur(1.5px)
     }
 
 .contenedor .electricas  {
