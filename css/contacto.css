@@ -216,7 +216,7 @@ button {
     z-index: 1;
     /* margin: 50px; */
     /* border: #04aef1 solid; */
-    /*     
+    /*
     display: flex;
     align-items:center; */
     display: flex;
@@ -239,13 +239,13 @@ button {
 .contenedor-mapa {
     padding-left: 15px;
     /* border: #04aef1 solid; */
-    
-    
+
+
 }
 
 /*.mapa iframe{
     border: #04aef1 solid;
-    border-radius: 40px; /* Ajusta este valor para cambiar la curvatura 
+    border-radius: 40px; /* Ajusta este valor para cambiar la curvatura
 } */
 
 .columna {
@@ -380,6 +380,68 @@ button {
 
 
 
+
+@media (max-width: 720px) {
+
+    .row {
+        flex-direction: column;
+        /* align-content: center; */
+    }
+
+    .row>* {
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-contenedor {
+        width: 100%;
+        max-width: 100%;
+        overflow-y: auto;
+    }
+
+    .grid-contenedor {
+        width: 100%;
+        max-width: 100%;
+        overflow-y: auto;
+    }
+
+    .item4 {
+        flex-grow: 1;
+    }
+
+    button {
+        /* border: 2px rgb(219, 22, 179) solid; */
+        margin-left: 32%;
+        font-size: 18px;
+        padding: 12px 24px;
+
+
+    }
+
+    .enviar-mensaje {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 721px) and (max-width: 768px) {
+    
+    .grid-contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+}
 
 
 
