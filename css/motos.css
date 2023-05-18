@@ -233,4 +233,6 @@ align-items: center;
     border-radius: 10px;
   }
 
-  
+  .carousel-inner .carousel-item {
+    transition-duration: 1.5s;
+  }
