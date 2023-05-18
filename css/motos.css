@@ -76,20 +76,22 @@ color: #264653;
     top: 0;
     left: 0;     
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items:center;
     font-size: 20px;
     width: 100%;
     grid-area: encabezado;
     background-image: linear-gradient(to left, #e9c46a, #264653);
+    
     }
 
 .contenedor .fotoPrincipal {
     width: 100%;
     grid-area: fotoPrincipal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #E9C46A;
+    padding-top: 25px;
     
 }
 
@@ -211,18 +213,24 @@ color: #264653;
     height: auto;
 } 
 
+.nav{
+
+display: flex;
+align-items: center;
+
+}
+
 
 .nav-link {
     color: white;
     text-decoration: none;
-    text-shadow: 2px 2px 4px black
+    text-shadow: 2px 2px 4px black;
 }
 
 .nav-link:hover {
     background-color:#F4A261;
     color: black;
     border-radius: 10px;
-    width: 100%;
   }
 
   
