@@ -12,8 +12,10 @@
 }
 
 body {
+    background-color: beige;
     margin: 0;
     width: 100%;
+
 }
 
 header {
@@ -47,6 +49,30 @@ nav a {
     text-transform: uppercase;
 }
 
+.nav-item {
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    height: auto;
+}
+
+.nav-link {
+
+    display: block;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.0005s ease-in-out;
+
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: #264653;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
 header img {
     max-height: 32px;
 }
@@ -61,23 +87,22 @@ footer {
 
 
 .contenedor-alfa {
-    background-color: rgba(248, 236, 234, 50%);
-    ;
-    color: black;
+    background-color: #F4A261;
+    color: white;
     padding: 20px;
     font-size: 20px;
     text-align: center;
     margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 .contenedor-beta {
-    background-color: rgba(248, 236, 234, 50%);
-    ;
-    color: black;
+    background-color: #F4A261;
+    color: white;
     padding: 20px;
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .grilla-3x1 {
