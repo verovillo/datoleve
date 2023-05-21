@@ -42,18 +42,19 @@ color: #264653;
     display: grid;
     grid-row-gap: 40px;
     grid-column-gap: 50px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(10,auto);
-    grid-template-areas: "encabezado encabezado encabezado"
-                         "fotoPrincipal fotoPrincipal fotoPrincipal" 
-                         "historia textHistoria textHistoria"
-                         "tElectricas tElectricas tElectricas"
-                         "electricas electricas electricas"
-                         "tUrbanas tUrbanas tUrbanas"
-                         "urbanas urbanas urbanas "
-                         "tParaViajar tParaViajar tParaViajar"
-                         "paraViajar paraViajar paraViajar"
-                         "pie pie pie"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: 
+      "encabezado encabezado encabezado"
+      "fotoPrincipal fotoPrincipal fotoPrincipal" 
+      "historia textHistoria textHistoria"
+      "tElectricas tElectricas tElectricas"
+      "electricas electricas electricas"
+      "tUrbanas tUrbanas tUrbanas"
+      "urbanas urbanas urbanas"
+      "tParaViajar tParaViajar tParaViajar"
+      "paraViajar paraViajar paraViajar"
+      "pie pie pie";
 }
 
 
@@ -192,6 +193,16 @@ color: #264653;
     height: auto;
 }
 
+.box-content{
+    position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+
 
 .box:hover{
 
@@ -235,4 +246,16 @@ align-items: center;
 
   .carousel-inner .carousel-item {
     transition-duration: 1.5s;
+  }
+
+  @media (max-width: 768px) {
+    .contenedor{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contenedor{
+      grid-template-columns: 1fr;
+    }
   }
