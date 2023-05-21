@@ -71,7 +71,7 @@ body {
 
 .formulario {
     /* display:inline-flex; */
-    padding: 190px 160px 90px 160px;
+    padding: 150px 160px 90px 160px;
     /* margin-bottom: 50px; */
     /* border: #264653 solid; */
 }
@@ -329,6 +329,7 @@ nav img {
     display: flex;
     background-image: linear-gradient(to left, #e9c46a, #264653);
     justify-content: space-between;
+    /* padding: 10px; */
 
     align-items: center;
     /* display: grid; */
@@ -389,7 +390,7 @@ nav a {
 
     .row>* {
         width: 100%;
-        
+
     }
 
     body {
@@ -428,7 +429,7 @@ nav a {
         margin-top: 10px;
     }
 
-    .formulario{
+    .formulario {
         /* padding: 20px; */
         padding-left: 5px;
         padding-right: 5px;
@@ -440,13 +441,13 @@ nav a {
         margin-left: 10px;
     }
 
-    
+
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .formulario{
+    .formulario {
         /* padding: 20px; */
         padding-left: 5px;
         padding-right: 5px;
@@ -458,8 +459,92 @@ nav a {
         padding: 12px 24px;
     }
 
-  
-  }
+
+}
+
+/* API CLIMA */
+#contenedor-clima {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#caja1 {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    /* border: #f44336 solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    background-color:#ffe4b5;
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+}
+
+#caja2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 150px;
+    height: 130px;
+    /* border: #f44336 solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    background-color:#ffe4b5;
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+}
+
+#caja3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 130px;
+    /* border: #f44336 solid; */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    background-color:#ffe4b5;
+    background-size: 8px 8px;
+    background-position: 0 0, 4px 4px;
+}
+
+#temperatura-valor {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#temperatura-descripcion {
+    font-size: 14px;
+    padding: 5px;
+}
+
+#ubicacion {
+    /* border: #e9c46a solid; */
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#icono-animado {
+    /* border: #e9c46a solid; */
+    height: 100px;
+    width: 100px;
+    margin: 0%;
+    padding: 0%;
+}
 
 
 
@@ -474,6 +559,7 @@ nav a {
 
 .item3 {
     grid-area: main;
+    /* border: blue solid; */
 }
 
 .item4 {
