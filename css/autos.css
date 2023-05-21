@@ -227,9 +227,11 @@ footer {
 @media (max-width: 768px) {
 
     header {
+        position: relative;
         flex-direction: column;
         align-items: flex-start;
     }
+
 
     nav {
         margin-top: 10px;
