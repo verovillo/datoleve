@@ -67,8 +67,7 @@ color: #264653;
 .contenedor .pie {
     padding: 10;
     border-radius: 5px;
-    background-color:;
-     
+         
 }
 
 
@@ -248,7 +247,7 @@ align-items: center;
     transition-duration: 1.5s;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .contenedor{
       grid-template-columns: repeat(2, 1fr);
     }
