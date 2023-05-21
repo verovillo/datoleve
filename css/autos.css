@@ -12,8 +12,10 @@
 }
 
 body {
+    background-color: beige;
     margin: 0;
     width: 100%;
+
 }
 
 header {
@@ -47,6 +49,30 @@ nav a {
     text-transform: uppercase;
 }
 
+.nav-item {
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    height: auto;
+}
+
+.nav-link {
+
+    display: block;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.0005s ease-in-out;
+
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: #264653;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
 header img {
     max-height: 32px;
 }
@@ -61,31 +87,33 @@ footer {
 
 
 .contenedor-alfa {
-    background-color: rgba(248, 236, 234, 50%);;
-    color: black;
+    background-color: #F4A261;
+    color: white;
     padding: 20px;
     font-size: 20px;
     text-align: center;
     margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 .contenedor-beta {
-    background-color: rgba(248, 236, 234, 50%);;
-    color: black;
+    background-color: #F4A261;
+    color: white;
     padding: 20px;
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.grilla-3x2 {
+.grilla-3x1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(1, 300px);
     gap: 10px;
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10px;
 }
 
 .grilla-2x1a {
@@ -103,6 +131,7 @@ footer {
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10px;
 }
 
 .imagen img {
@@ -112,20 +141,21 @@ footer {
 }
 
 .item {
-    background-color: beige;
+    background-color: white;
+
     padding: 20px;
     font-size: 18px;
     text-align: center;
     border-radius: 25px;
 }
 
-.item2 {
-    background-color: rgba(248, 236, 234, 50%);;
+/* .item2 {
+    background-color: rgba(248, 236, 234, 50%);
     color: black;
     padding: 20px;
     font-size: 18px;
     text-align: center;
-}
+} */
 
 
 .mapa {
@@ -150,6 +180,79 @@ footer {
     margin: 0px 20px 0px 98%;
     padding: 0%;
     text-align: center;
+
+
+}
+
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 50s infinite alternate ease-in-out;
+}
+
+.slide {
+    width: 25%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+
+    .grilla-3x1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grilla-2x1b {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
 
 
 }

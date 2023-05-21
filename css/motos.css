@@ -36,24 +36,24 @@ color: #264653;
 
 
 .contenedor{
-    width: 100vw;
+    width: 100%;
     max-width: 100%; /*  Ancho maximo */
     margin: 5px auto;
     display: grid;
     grid-row-gap: 40px;
     grid-column-gap: 50px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(10,auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, auto);
     grid-template-areas: "encabezado encabezado encabezado"
-                         "fotoPrincipal fotoPrincipal fotoPrincipal" 
-                         "historia textHistoria textHistoria"
-                         "tElectricas tElectricas tElectricas"
-                         "electricas electricas electricas"
-                         "tUrbanas tUrbanas tUrbanas"
-                         "urbanas urbanas urbanas "
-                         "tParaViajar tParaViajar tParaViajar"
-                         "paraViajar paraViajar paraViajar"
-                         "pie pie pie"
+                        "fotoPrincipal fotoPrincipal fotoPrincipal" 
+                        "historia textHistoria textHistoria"
+                        "tElectricas tElectricas tElectricas"
+                        "electricas electricas electricas"
+                        "tUrbanas tUrbanas tUrbanas"
+                        "urbanas urbanas urbanas"
+                        "tParaViajar tParaViajar tParaViajar"
+                        "paraViajar paraViajar paraViajar"
+                        "pie pie pie";
 }
 
 
@@ -66,8 +66,7 @@ color: #264653;
 .contenedor .pie {
     padding: 10;
     border-radius: 5px;
-    background-color:;
-     
+         
 }
 
 
@@ -99,7 +98,7 @@ color: #264653;
     width: 100%;
     grid-area: historia;
     background-color:#F4A261;
-    box-shadow: 10px 10px 10px black
+    box-shadow: 10px 10px 10px black;
     }
 
 .contenedor .textHistoria {
@@ -111,7 +110,7 @@ color: #264653;
     font-weight: bold;
     box-shadow: 10px 10px 10px black;
     color: white;
-    text-shadow: 2px 2px 4px black
+    text-shadow: 2px 2px 4px black;
                 
 }
 
@@ -137,7 +136,7 @@ color: #264653;
     grid-area: tParaViajar;
     border-top: solid 0.5px;
     border-color: gray;
-    backdrop-filter: blur(1.5px)
+    backdrop-filter: blur(1.5px);
     }
 
 .contenedor .electricas  {
@@ -145,8 +144,7 @@ color: #264653;
     grid-area: electricas;
     display: flex;
     grid-column-gap: 40px;
-    grid-template-columns: auto;
-    
+        
 }
 
 .contenedor .urbanas {
@@ -154,7 +152,6 @@ color: #264653;
     grid-area: urbanas;
     display: flex;
     grid-column-gap: 40px;
-    grid-template-columns: auto;
     
 }
 
@@ -163,8 +160,7 @@ color: #264653;
     grid-area: paraViajar;
     display: flex;
     grid-column-gap: 40px;
-    grid-template-columns: auto;
-    
+   
 }
 
 .contenedor .pie {
@@ -192,6 +188,16 @@ color: #264653;
     height: auto;
 }
 
+.box-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+
 
 .box:hover{
 
@@ -202,10 +208,8 @@ color: #264653;
 .box2{
 
     width: 100%; 
-    grid-column: span 1;
-    grid-row: span 1;
     text-align: center;
-    border-radius: 5%      
+    border-radius: 5%;      
 }
 
 .box2 img{
@@ -235,4 +239,67 @@ align-items: center;
 
   .carousel-inner .carousel-item {
     transition-duration: 1.5s;
+  }
+
+  @media screen and (max-width: 768px){
+    .contenedor{
+                grid-template-areas: "encabezado encabezado"
+                             "fotoPrincipal fotoPrincipal" 
+                             "textHistoria textHistoria"
+                             "historia historia"
+                             "tElectricas tElectricas"
+                             "electricas electricas"
+                             "tUrbanas tUrbanas"
+                             "urbanas urbanas"
+                             "tParaViajar tParaViajar"
+                             "paraViajar paraViajar"
+                             "pie pie";
+                }  
+                .contenedor .fotoPrincipal,
+                .contenedor .textHistoria,
+                .contenedor .historia,
+                .contenedor .tElectricas,
+                .contenedor .electricas,
+                .contenedor .tUrbanas,
+                .contenedor .urbanas,
+                .contenedor .tParaViajar,
+                .contenedor .paraViajar,
+                .contenedor .pie {
+                 flex-direction: column;
+                 align-items: center;
+                 width: 100%;
+                 flex-wrap: wrap;                 
+                                         }
+                                            
+  } 
+   
+  @media screen and (max-width: 450px){
+    .contenedor{
+                grid-template-areas: "encabezado"
+                             "fotoPrincipal" 
+                             "textHistoria"
+                             "historia" 
+                             "tElectricas"
+                             "electricas"
+                             "tUrbanas"
+                             "urbanas"
+                             "tParaViajar"
+                             "paraViajar"
+                             "pie";
+                }   
+                .contenedor .fotoPrincipal,
+                .contenedor .textHistoria,
+                .contenedor .historia,
+                .contenedor .tElectricas,
+                .contenedor .electricas,
+                .contenedor .tUrbanas,
+                .contenedor .urbanas,
+                .contenedor .tParaViajar,
+                .contenedor .paraViajar,
+                .contenedor .pie {
+                 flex-direction: column;
+                 align-items: center;
+                 width: 100%;
+                 flex-wrap: wrap;                 
+                                         }
   }

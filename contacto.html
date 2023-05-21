@@ -11,27 +11,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    
-    
+
+
 
 </head>
 
 <body>
     <div class="grid-contenedor">
-        <section class="item2">
-            <img class="logo" src="Images/Contacto/Logo Rental.png" alt="logo">
-            <nav class="navbar">
-                <div class="nav-item">
-                    <a class="nav-link" href="index.html">INICIO</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="autos.html">AUTOS</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="motos.html">MOTOS</a>
-                </div>
 
+        <section class="item2">
+
+            <nav class="navbar">
+
+                <img class="logo" src="Images/Contacto/Logo Rental.png" alt="logo">
+
+                <div class="barra">
+                    <div class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="autos.html">AUTOS</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="motos.html">MOTOS</a>
+                    </div>
+                </div>
             </nav>
+
+
         </section>
 
         <header class="item1">
@@ -49,6 +56,20 @@
 
 
         <main class="item3">
+            <div id="contenedor-clima">
+                <div id="caja1">
+                    <h1 id="temperatura-valor"></h1>
+                    <h1 id="temperatura-descripcion"></h1>
+                </div>
+                <div id="caja2">
+                    <h2 id="ubicacion"></h2>
+                    <img id="icono-animado" src="" alt="" height="128" width="128">
+                </div>
+                <div id="caja3">
+                    <h3>Veloc. del Viento</h3>
+                    <h1 id="viento-velocidad"></h1>
+                </div>
+            </div>
             <section class="enviar-mensaje">
 
                 <div class="formulario">
@@ -125,10 +146,10 @@
 
                     <div class="mapa">
                         <div class="contenedor-mapa">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.79571461868!2d-58.40901601046854!3d-34.609326907905874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf20effada1%3A0xed76bc679c136c1b!2sPlaza%20Miserere!5e0!3m2!1ses-419!2sar!4v1682819628258!5m2!1ses-419!2sar"
-                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.79571461868!2d-58.40901601046854!3d-34.609326907905874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf20effada1%3A0xed76bc679c136c1b!2sPlaza%20Miserere!5e0!3m2!1ses-419!2sar!4v1682819628258!5m2!1ses-419!2sar"
+                                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <!-- <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.79571461868!2d-58.40901601046854!3d-34.609326907905874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf20effada1%3A0xed76bc679c136c1b!2sPlaza%20Miserere!5e0!3m2!1ses-419!2sar!4v1682819628258!5m2!1ses-419!2sar"
@@ -147,13 +168,13 @@
                     <div class="redes-sociales">
                         <h5>Visítanos en nuestras redes sociales: </h5>
                         <div class="facebook">
-                            <a class="icon-face" href="https://www.facebook.com"><img
+                            <a class="icon-face" href="https://www.facebook.com" target="_blank"><img
                                     src="Icons/Contacto/facebookblack.svg" alt="Icono de Facebook" width="100"
                                     height="50px"></a>
                         </div>
                         <!-- <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Icono de Twitter"></a></li> -->
                         <div class="instagram">
-                            <a class="icon-insta" href="https://www.instagram.com"><img
+                            <a class="icon-insta" href="https://www.instagram.com" target="_blank"><img
                                     src="Icons/Contacto/instagramblack.svg" alt="Icono de Instagram" width="100"
                                     height="50px"></a>
                         </div>
@@ -164,9 +185,10 @@
 
             </div>
 
-        
+
     </div>
     <script src="JS/contacto.js"></script>
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
