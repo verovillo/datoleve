@@ -8,10 +8,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/registro', (req, res) => {
-    // Obtener los datos del cuerpo de la solicitud
+
+    // Obtener los datos del HTML5
     const { nombre, apellido, correo, contraseña } = req.body;
 
-    // Crear un objeto con la información del cliente
+    // Crear un objeto con la información DEL HTML5
     const cliente = {
         nombre,
         apellido,
@@ -19,7 +20,7 @@ app.post('/registro', (req, res) => {
         contraseña,
     };
 
-    // Leer el archivo JSON existente (si lo hay)
+    // Leer el archivo clientes.json
     fs.readFile('clientes.json', (err, data) => {
         if (err) {
             console.log(err);
@@ -29,29 +30,27 @@ app.post('/registro', (req, res) => {
 
         let clientes = [];
         if (data.length > 0) {
-            // Parsear el contenido del archivo JSON a un array
+            // Parsear el contenido de clientes.json a un array
             clientes = JSON.parse(data);
         }
 
-        // Agregar el nuevo cliente al array
+        // Agrega el nuevo cliente al array
         clientes.push(cliente);
 
-        // Convertir el array a formato JSON
+        // Convertir el array a formato json
         const jsonClientes = JSON.stringify(clientes);
 
-        // Guardar el contenido actualizado en el archivo JSON
+        // 
         fs.writeFile('clientes.json', jsonClientes, (error) => {
             if (error) {
                 console.log(error);
                 res.status(500).send('Error al guardar la información en el archivo JSON.');
                 return;
             }
-
-            // Resto del código para enviar el correo electrónico
-
+// Envio del correo al cliente
             const transporter = nodemailer.createTransport({
 
-                // Aquí debes configurar los detalles del servidor de correo saliente (SMTP)
+                // Configuracion del servicio de correo, se utilizo Gmail
                 pool: true,
                 host: "smtp.gmail.com",
                 port: 465,
@@ -64,7 +63,7 @@ app.post('/registro', (req, res) => {
 
             });
 
-            // Configurar el contenido del correo electrónico
+            // Contenido del correo electrónico
             const mailOptions = {
                 from: 'ba.rental.23027@gmail.com',
                 to: correo,
@@ -72,7 +71,7 @@ app.post('/registro', (req, res) => {
                 text: `Hola ${nombre} ${apellido}, gracias por registrarte en nuestro sitio.`,
             };
 
-            // Enviar el correo electrónico
+            // Envio del correo electrónico
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
                     console.log(error);
@@ -84,7 +83,7 @@ app.post('/registro', (req, res) => {
             });
 
 
-            // Envío de respuesta exitosa
+            //Respuesta de envio exitoso
             res.status(200).send('Registro exitoso. Se ha guardado la información en el archivo JSON.');
         });
     });
