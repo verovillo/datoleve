@@ -1,5 +1,3 @@
-document.querySelector('.error').style.display = 'block';
-
 const $form = document.querySelector("#form")
 
 $form.addEventListener("submit", handleSubmit)
