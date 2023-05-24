@@ -22,9 +22,9 @@
         <section class="item2">
 
             <nav class="navbar">
-
-                <img class="logo" src="Images/Contacto/Logo Rental.png" alt="logo">
-
+                <a href="index.html">
+                    <img class="logo" src="Images/Contacto/Logo Rental.png" alt="logo">
+                </a>
                 <div class="barra">
                     <div class="nav-item">
                         <a class="nav-link" href="index.html">INICIO</a>
@@ -77,15 +77,16 @@
                     <div class="contacto-titulo">CONTACTO</div>
 
                     <div class="contenedor-formulario">
-                        <form id="form" class="form" action="https://formspree.io/f/myyaoqng" method="POST">
+                        <form id="form" class="form" action="https://formspree.io/f/myyaoqng" method="POST" >
                             <div class="row">
                                 <div class="name">
                                     <!--NOMBRE -->
                                     <div class="label-nombre">
                                         <label for="nombre">NOMBRE</label>
                                     </div>
-                                    <div class="type-nombre">
+                                    <div class="type-nombre" >
                                         <input type="text" name="nombre" id="nombre" required>
+                                        <span id="nombre-error" class="error"></span>
                                     </div>
                                 </div>
 
@@ -94,8 +95,9 @@
                                     <div class="label-apellido">
                                         <label for="apellido">APELLIDO</label>
                                     </div>
-                                    <div class="type-apellido">
+                                    <div class="type-apellido" >
                                         <input type="text" name="apellido" id="apellido">
+                                        <span id="apellido-error" class="error"></span>
                                     </div>
                                 </div>
 
@@ -104,8 +106,9 @@
                                     <div class="label-email">
                                         <label for="email">E-MAIL</label>
                                     </div>
-                                    <div class="type-email">
+                                    <div class="type-email" >
                                         <input type="email" name="email" id="email" required>
+                                        <span id="email-error" class="error"></span>
                                     </div>
                                 </div>
 
@@ -114,8 +117,9 @@
                                     <div class="label-telefono">
                                         <label for="telefono">N°DE TELEFONO</label>
                                     </div>
-                                    <div class="type-telefono">
+                                    <div class="type-telefono" >
                                         <input type="tel" name="telefono" id="telefono" required>
+                                        <span id="telefono-error" class="error"></span>
                                     </div>
                                 </div>
                             </div>
@@ -189,6 +193,7 @@
     </div>
     <script src="JS/contacto.js"></script>
     <script src="JS/app.js"></script>
+    
 </body>
 
 </html>

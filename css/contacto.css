@@ -158,11 +158,12 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f44336;
+    background-color: orange;
     color: white;
     text-align: center;
     padding: 1rem;
     z-index: 9999;
+    font-weight: 900;
 }
 
 .contendor-footer {
@@ -540,8 +541,8 @@ nav a {
 
 #icono-animado {
     /* border: #e9c46a solid; */
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     margin: 0%;
     padding: 0%;
 }
@@ -564,4 +565,17 @@ nav a {
 
 .item4 {
     grid-area: footer;
+}
+/* .error{
+    
+    color: black;
+    font-weight: 900;
+    padding: 5px;
+} */
+
+.error {
+    display: none;
+    color: black;
+    font-weight: 900;
+    padding: 5px;
 }
