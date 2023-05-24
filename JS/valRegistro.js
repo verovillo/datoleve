@@ -1,37 +1,42 @@
-var nombre = document.getElementById('nombre').value.trim();
+    var registro = document.getElementById('registro');
+
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        
+        var nombre = document.getElementById('nombre').value.trim();
         var apellido = document.getElementById('apellido').value.trim();
         var correo = document.getElementById('correo').value.trim();
-        var contraseña = document.getElementById('contraseña').value;
+        var contraseña = document.getElementById('contraseña').value.trim();
 
-    function validarFormulario() {
         
-
         if (nombre === '') {
             alert('Por favor, ingrese su nombre.');
-            return false;
+            return;
         }
 
         if (apellido === '') {
             alert('Por favor, ingrese su apellido.');
-            return false;
+            return;
         }
 
         if (correo === '') {
             alert('Por favor, ingrese su correo electrónico.');
-            return false;
+            return;
         } else {
             var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!regex.test(correo)) {
-                alert('Por favor, ingrese un correo electrónico válido.');
-                return false;
+                alert('Por favor, ingrese un correo electrónico.');
+                return;
             }
         }
 
         if (contraseña === '') {
             alert('Por favor, ingrese una contraseña.');
-            return false;
+            return;
         }
 
-        return true;
-    }
+        formulario.submit();
+    });
+
 

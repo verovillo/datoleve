@@ -68,7 +68,7 @@ app.post('/registro', (req, res) => {
                 from: 'ba.rental.23027@gmail.com',
                 to: correo,
                 subject: '¡Bienvenido(a)!',
-                text: `Hola ${nombre} ${apellido}, gracias por registrarte en nuestro sitio.`,
+                text: `Hola ${nombre} ${apellido}, gracias por registrarte en BA-Rental, El mejor sitio para rentar.`,
             };
 
             // Envio del correo electrónico
@@ -84,11 +84,11 @@ app.post('/registro', (req, res) => {
 
 
             //Respuesta de envio exitoso
-            res.status(200).send('Registro exitoso. Se ha guardado la información en el archivo JSON.');
+            res.status(200).send('Registro exitoso. Se envio la informacion al usuario y se guardaron los datos en clientes.json');
         });
     });
 });
 
 app.listen(3000, () => {
-    console.log('Servidor iniciado en el puerto 3000');
+    console.log('Servidor se inicio en el puerto 3000');
 });

@@ -75,14 +75,15 @@
             </section>
         </div>
         <selection class="registro">
-            <form action="http://localhost:3000/registro" method="POST">
+            <form id="registro" action="http://localhost:3000/registro" method="POST">
 
                 <h4 align="center">Registrarse</h4>
-                <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese Su Nombre">
-                <input class="control" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
-                <input class="control" type="email" name="correo" id="correo" placeholder="Ingrese Su Correo">
+                <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese Su Nombre" required>
+                <input class="control" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido"
+                    required>
+                <input class="control" type="email" name="correo" id="correo" placeholder="Ingrese Su Correo" required>
                 <input class="control" type="password" name="contraseña" id="contraseña"
-                    placeholder="Ingrese Contraseña Nueva">
+                    placeholder="Ingrese Contraseña Nueva" required>
                 <input class="boton" type="submit" value="Registrar">
 
             </form>
@@ -101,34 +102,16 @@
                 Con una amplia gama de modelos de autos y motos de las principales marcas del mercado, la empresa ofrece
                 opciones para todos los gustos y necesidades. Además, cuenta con una flota renovada y en constante
                 actualización para asegurar la mejor experiencia de manejo y seguridad.</p>
-
-            <!-- <div class="pLogosRedes">
-                <a href="https://www.facebook.com/" target="_blank" rel="Facebook">
-                    <img src="../BA-Rental.github.io/Images/Index/facebook.png" alt="facebook" width="30px">
-                </a>
-            </div>
-
-            <div class="pLogosRedes">
-                <a href="https://www.instagram.com/" target="_blank"> <img
-                        src="../BA-Rental.github.io/Images/Index/instagram.png" alt="instagram" width="30px">
-                </a>
-            </div>
-
-            <div class="pLogosRedes" style="margin-right: 50px;">
-                <a href="http://gmail.com" target="_blank" rel="Mail">
-                    <img src="../BA-Rental.github.io/Images/Index/sobre.png" alt="correo" width="30px">
-                </a>
-            </div> -->
         </div>
-        <!-- </div> -->
+
     </main>
     <footer class="item4">
 
     </footer>
 
-    <script src="..//BA-Rental.github.io/JS/valRegistro.js"></script>
-    <script src="..//BA-Rental.github.io/JS/footer.js"></script>
     <script src="..//BA-Rental.github.io/JS/se.js"></script>
+    <script src="..//BA-Rental.github.io/JS/footer.js"></script>
+    <script src="..//BA-Rental.github.io/JS/valRegistro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
