@@ -45,15 +45,15 @@ color: #264653;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "encabezado encabezado encabezado"
-                        "fotoPrincipal fotoPrincipal fotoPrincipal" 
-                        "historia textHistoria textHistoria"
-                        "tElectricas tElectricas tElectricas"
-                        "electricas electricas electricas"
-                        "tUrbanas tUrbanas tUrbanas"
-                        "urbanas urbanas urbanas"
-                        "tParaViajar tParaViajar tParaViajar"
-                        "paraViajar paraViajar paraViajar"
-                        "pie pie pie";
+                         "fotoPrincipal fotoPrincipal fotoPrincipal" 
+                         "historia textHistoria textHistoria"
+                         "tElectricas tElectricas tElectricas"
+                         "electricas electricas electricas"
+                         "tUrbanas tUrbanas tUrbanas"
+                         "urbanas urbanas urbanas"
+                         "tParaViajar tParaViajar tParaViajar"
+                         "paraViajar paraViajar paraViajar"
+                         "pie pie pie";
 }
 
 
@@ -165,10 +165,12 @@ color: #264653;
 
 .contenedor .pie {
     width: 100%;
-    height: 30px;
     grid-area: pie;
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items:center;
             
 }
 
@@ -241,6 +243,7 @@ align-items: center;
     transition-duration: 1.5s;
   }
 
+  
   @media screen and (max-width: 768px){
     .contenedor{
                 grid-template-areas: "encabezado encabezado"
@@ -255,6 +258,7 @@ align-items: center;
                              "paraViajar paraViajar"
                              "pie pie";
                 }  
+                .contenedor .encabezado,
                 .contenedor .fotoPrincipal,
                 .contenedor .textHistoria,
                 .contenedor .historia,
@@ -267,9 +271,18 @@ align-items: center;
                 .contenedor .pie {
                  flex-direction: column;
                  align-items: center;
-                 width: 100%;
-                 flex-wrap: wrap;                 
-                                         }
+                 width: 100vw;
+                 flex-wrap:wrap;
+                 gap: 40px;
+                 font-size: smaller;
+                 
+                                  }
+
+                .contenedor .fotoPrincipal{
+                    padding-top: 100px;
+                }
+
+
                                             
   } 
    
@@ -299,7 +312,14 @@ align-items: center;
                 .contenedor .pie {
                  flex-direction: column;
                  align-items: center;
-                 width: 100%;
-                 flex-wrap: wrap;                 
+                 width: 100vw;
+                 flex-wrap: wrap;
+                 gap: 40px;  
+                 font-size: smaller;               
                                          }
+
+                .contenedor .fotoPrincipal{
+                 padding-top: 100px;
+                                        }  
+
   }
